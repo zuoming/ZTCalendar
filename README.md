@@ -9,6 +9,8 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+<img src="https://github.com/zuoming/ZTCalendar/blob/master/screenshot.png" width="30%" height="30%">
+
 ## Requirements
 
 ## Installation
@@ -19,8 +21,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'ZTCalendar'
 ```
-
-<img src="https://github.com/zuoming/ZTCalendar/blob/master/screenshot.png" width="30%" height="30%">
 
 ## 创建横向日历
 
