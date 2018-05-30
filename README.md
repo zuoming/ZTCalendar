@@ -22,6 +22,8 @@ pod 'ZTCalendar'
 
 ## 创建横向日历
 
+<img src="https://github.com/zuoming/ZTCalendar/blob/master/screenshot.png" width="30%" height="30%">
+
 ```objc
 - (ZTCalendarView *)calendarView
 {
