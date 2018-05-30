@@ -83,7 +83,6 @@
 - (BOOL)calendarView:(ZTCalendarView *)calendarView shouldSelectCellAtDate:(NSDate *)date
 {
     return YES;
-    //    return [date ztc_daysSince:self.helper.babyInfo.birthdayDate] < 10;
 }
 
 - (void)calendarView:(ZTCalendarView *)calendarView didSelectCellAtDate:(NSDate *)date
