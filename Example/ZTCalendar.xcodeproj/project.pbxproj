@@ -24,6 +24,12 @@
 		6FFAA94A4F449DB79B06AC67 /* Pods_ZTCalendar_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E21EC59CBED62EF0C48E51 /* Pods_ZTCalendar_Tests.framework */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		BE662F4720BE81EE002EC97C /* ZTCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE662F4620BE81EE002EC97C /* ZTCalendarCell.m */; };
+		BE662F4C20BEA62D002EC97C /* calendar_back_hilight@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE662F4820BEA62C002EC97C /* calendar_back_hilight@3x.png */; };
+		BE662F4D20BEA62D002EC97C /* calendar_back_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE662F4920BEA62C002EC97C /* calendar_back_normal@3x.png */; };
+		BE662F4E20BEA62D002EC97C /* calendar_back_hilight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE662F4A20BEA62C002EC97C /* calendar_back_hilight@2x.png */; };
+		BE662F4F20BEA62D002EC97C /* calendar_back_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE662F4B20BEA62D002EC97C /* calendar_back_normal@2x.png */; };
+		BE662F5220BEACA8002EC97C /* ZTIndexCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE662F5120BEACA8002EC97C /* ZTIndexCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +44,7 @@
 
 /* Begin PBXFileReference section */
 		0C6170E0D94BA47BDF5961D8 /* Pods_ZTCalendar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZTCalendar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		47897981E2360933C2CB3634 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		47897981E2360933C2CB3634 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ZTCalendar_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZTCalendar_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,9 +68,17 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98E21EC59CBED62EF0C48E51 /* Pods_ZTCalendar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZTCalendar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F761480B7852C9F393BC5B0 /* Pods-ZTCalendar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZTCalendar_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZTCalendar_Example/Pods-ZTCalendar_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D34C3DD46030FAC3518488BA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BE662F4520BE81EE002EC97C /* ZTCalendarCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTCalendarCell.h; sourceTree = "<group>"; };
+		BE662F4620BE81EE002EC97C /* ZTCalendarCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTCalendarCell.m; sourceTree = "<group>"; };
+		BE662F4820BEA62C002EC97C /* calendar_back_hilight@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar_back_hilight@3x.png"; sourceTree = "<group>"; };
+		BE662F4920BEA62C002EC97C /* calendar_back_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar_back_normal@3x.png"; sourceTree = "<group>"; };
+		BE662F4A20BEA62C002EC97C /* calendar_back_hilight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar_back_hilight@2x.png"; sourceTree = "<group>"; };
+		BE662F4B20BEA62D002EC97C /* calendar_back_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "calendar_back_normal@2x.png"; sourceTree = "<group>"; };
+		BE662F5020BEACA8002EC97C /* ZTIndexCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZTIndexCell.h; sourceTree = "<group>"; };
+		BE662F5120BEACA8002EC97C /* ZTIndexCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZTIndexCell.m; sourceTree = "<group>"; };
+		D34C3DD46030FAC3518488BA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D66F2CEB15A1521F156D98F6 /* Pods-ZTCalendar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZTCalendar_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZTCalendar_Tests/Pods-ZTCalendar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E35645B6CBBD3E4705B2E778 /* ZTCalendar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZTCalendar.podspec; path = ../ZTCalendar.podspec; sourceTree = "<group>"; };
+		E35645B6CBBD3E4705B2E778 /* ZTCalendar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZTCalendar.podspec; path = ../ZTCalendar.podspec; sourceTree = "<group>"; };
 		F5FD8A389EAD4925044C3DDC /* Pods-ZTCalendar_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZTCalendar_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZTCalendar_Example/Pods-ZTCalendar_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FCF9805DE10AAA3411E69B7C /* Pods-ZTCalendar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZTCalendar_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZTCalendar_Tests/Pods-ZTCalendar_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,11 +146,19 @@
 		6003F593195388D20070C39A /* Example for ZTCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				BE662F4A20BEA62C002EC97C /* calendar_back_hilight@2x.png */,
+				BE662F4820BEA62C002EC97C /* calendar_back_hilight@3x.png */,
+				BE662F4B20BEA62D002EC97C /* calendar_back_normal@2x.png */,
+				BE662F4920BEA62C002EC97C /* calendar_back_normal@3x.png */,
 				6003F59C195388D20070C39A /* ZTAppDelegate.h */,
 				6003F59D195388D20070C39A /* ZTAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* ZTViewController.h */,
 				6003F5A6195388D20070C39A /* ZTViewController.m */,
+				BE662F4520BE81EE002EC97C /* ZTCalendarCell.h */,
+				BE662F4620BE81EE002EC97C /* ZTCalendarCell.m */,
+				BE662F5020BEACA8002EC97C /* ZTIndexCell.h */,
+				BE662F5120BEACA8002EC97C /* ZTIndexCell.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -276,6 +298,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE662F4C20BEA62D002EC97C /* calendar_back_hilight@3x.png in Resources */,
+				BE662F4D20BEA62D002EC97C /* calendar_back_normal@3x.png in Resources */,
+				BE662F4F20BEA62D002EC97C /* calendar_back_normal@2x.png in Resources */,
+				BE662F4E20BEA62D002EC97C /* calendar_back_hilight@2x.png in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
@@ -301,10 +327,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ZTCalendar_Example/Pods-ZTCalendar_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/ZTCalendar/ZTCalendar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZTCalendar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,6 +386,8 @@
 				6003F59E195388D20070C39A /* ZTAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* ZTViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				BE662F5220BEACA8002EC97C /* ZTIndexCell.m in Sources */,
+				BE662F4720BE81EE002EC97C /* ZTCalendarCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +518,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZTCalendar/ZTCalendar-Prefix.pch";
 				INFOPLIST_FILE = "ZTCalendar/ZTCalendar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -503,6 +534,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ZTCalendar/ZTCalendar-Prefix.pch";
 				INFOPLIST_FILE = "ZTCalendar/ZTCalendar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

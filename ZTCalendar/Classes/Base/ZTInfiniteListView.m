@@ -24,6 +24,11 @@
     
 }
 
+- (instancetype)init
+{
+    return [self initWithDefaultSelectPosition:ZTInfiniteDefaultSelectPositionRight];
+}
+
 - (instancetype)initWithDefaultSelectPosition:(ZTInfiniteDefaultSelectPosition)defaultSelectPosition
 {
     self = [super init];

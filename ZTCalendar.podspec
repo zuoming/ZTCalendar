@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/zuoming/ZTCalendar'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'baggio.zuoming@gmail.com'}
+  s.author           = { 'zuoming' => 'baggio.zuoming@gmail.com' }
   s.source           = { :git => 'https://github.com/zuoming/ZTCalendar.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 

@@ -13,13 +13,19 @@
 @protocol ZTInfiniteListViewDelegate <NSObject>
 
 @required
+/** 单元格宽度 */
 - (CGFloat)widthOfCellInInfiniteListView:(ZTInfiniteListView *)infiniteListView;
+/** 创建单元格 */
 - (ZTInfiniteCell *)infiniteListView:(ZTInfiniteListView *)infiniteListView cellAtIndex:(NSInteger)idx;
 
 @optional
+/** 是否可以被选中 */
 - (BOOL)infiniteListView:(ZTInfiniteListView *)infiniteListView shouldSelectCellAtIndex:(NSInteger)idx;
+/** 选中 */
 - (void)infiniteListView:(ZTInfiniteListView *)infiniteListView didSelectCellAtIndex:(NSInteger)idx;
+/** 最大结束序号 */
 - (NSNumber *)maxIndexOfInfiniteListView:(ZTInfiniteListView *)infiniteListView;
+/** 最小开始序号 */
 - (NSNumber *)minIndexOfInfiniteListView:(ZTInfiniteListView *)infiniteListView;
 
 @end

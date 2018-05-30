@@ -1,6 +1,7 @@
 use_frameworks!
 
 target 'ZTCalendar_Example' do
+    pod 'Masonry'
   pod 'ZTCalendar', :path => '../'
 
   target 'ZTCalendar_Tests' do
