@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-一个横向无限滚动的视图控件、日历控件
+一个简单的横向无限滚动的视图控件、日历控件
                        DESC
 
   s.homepage         = 'https://github.com/zuoming/ZTCalendar'
