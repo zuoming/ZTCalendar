@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZTCalendar_Example' do
+  pod 'ZTCalendar', :path => '../'
+
+  target 'ZTCalendar_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
