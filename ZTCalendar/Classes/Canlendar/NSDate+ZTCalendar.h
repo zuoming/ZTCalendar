@@ -9,11 +9,6 @@
 
 @interface NSDate (ZTCalendar)
 
-/**
- return @"yyyy-MM-dd"
- */
-- (NSString *)ztc_dateStringBefore:(NSInteger)days;
-
 - (NSInteger)ztc_daysSince:(NSDate *)date;
 
 - (NSDate *)ztc_dateBefore:(NSInteger)days;

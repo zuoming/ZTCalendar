@@ -9,40 +9,15 @@
 
 @implementation NSDate (ZTCalendar)
 
-- (NSString *)ztc_dateStringBefore:(NSInteger)days
-{
-    NSCalendar *cal = [NSCalendar currentCalendar];
-    NSDateComponents *components = [cal components:( NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond ) fromDate:self];
-    
-    [components setHour:-[components hour]];
-    [components setMinute:-[components minute]];
-    [components setSecond:-[components second]];
-    NSDate *today = [cal dateByAddingComponents:components toDate:self options:0];
-    
-    [components setHour:-24 * days];
-    [components setMinute:0];
-    [components setSecond:0];
-    NSDate *yesterday = [cal dateByAddingComponents:components toDate:today options:0];
-    
-    components = [cal components:NSCalendarUnitWeekday | NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay fromDate:yesterday];
-    
-    return [NSString stringWithFormat:@"%zd-%zd-%zd", components.year, components.month, components.day];
-}
-
 - (NSDate *)ztc_dateBefore:(NSInteger)days
 {
     NSCalendar *cal = [NSCalendar currentCalendar];
     NSDateComponents *components = [cal components:( NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond ) fromDate:self];
     
-    [components setHour:-[components hour]];
-    [components setMinute:-[components minute]];
-    [components setSecond:-[components second]];
-    NSDate *today = [cal dateByAddingComponents:components toDate:self options:0];
-    
     [components setHour:-24 * days];
     [components setMinute:0];
     [components setSecond:0];
-    NSDate *before = [cal dateByAddingComponents:components toDate:today options:0];
+    NSDate *before = [cal dateByAddingComponents:components toDate:self options:0];
     
     return before;
 }
